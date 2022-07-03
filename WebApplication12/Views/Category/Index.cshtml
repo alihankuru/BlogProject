@@ -1,0 +1,40 @@
+﻿@model IEnumerable<EntityLayer.Concrete.Category>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<html>
+
+<head>
+
+
+</head>
+
+
+<body>
+    <div>
+
+
+    </div>
+    <br/>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Category Name</th>
+        </tr>
+        @foreach(var item in Model)
+         {
+    <tr>
+        <td>@item.CategoryID</td>
+        <td>@item.CategoryName</td>
+    </tr>
+         }
+    </table>
+
+</body>
+
+
+
+</html>
